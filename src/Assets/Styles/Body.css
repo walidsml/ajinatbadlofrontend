@@ -1,0 +1,36 @@
+.Categories{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cat-icon{
+    height: 30px;
+}
+.Categories-item{
+    font-size: 12px;
+    width: 140px;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    transition:  font-size 0.3s ease, box-shadow 0.3s ease ;
+}
+.Categories-item:hover{
+    cursor: pointer;
+    font-size: 14px;
+    width: 140px;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+
+}
+.hero-header{
+    text-align: start;
+    padding: 10px;
+    padding-left: 30px;
+
+
+}

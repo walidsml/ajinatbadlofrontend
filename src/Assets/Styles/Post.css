@@ -1,0 +1,141 @@
+.Item{
+    margin-right: 5px;
+    margin-left: 5px;
+
+    width: 220px;
+
+    box-shadow: 5px 5px 5px #000;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+.Item:hover{
+    cursor: pointer;
+    width: 230px;
+    box-shadow: 10px 10px 10px #000;
+}
+.item-image{
+    height: 250px;
+    width: 100%;
+}
+.item-author-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20px;
+
+}
+.Star-rate{
+    height: 15px;
+    margin: 3px;
+}
+.star-count{
+    font-size: 12px;
+}
+.title, .date-posted{
+    text-align: start;
+    margin: 0;
+    padding: 0;
+}
+
+.date-posted{
+    text-align: start;
+    height: 20px;
+}
+.date-posted{
+    color: gray;
+    margin-top: 4px;
+}
+
+.Item-List{
+    padding: 30px;
+    padding-top: 0px;
+
+}
+
+.Item-List{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.mustButtons{
+    padding: 4px;
+}
+.SendRequest-btn, .Favorite-btn{
+    height: 35px;
+    margin: 3px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+
+.SendRequest-btn:hover{
+    box-shadow: 5px 5px 5px black;
+    text-decoration: underline;
+}
+
+.Favorite-btn:hover{
+    box-shadow: 5px 5px 5px black;
+}
+
+
+/* Add these styles to your Post.css file */
+
+.image-carousel {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.image-indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.dot.active {
+    background: white;
+}
+
+.item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
