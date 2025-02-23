@@ -20,6 +20,8 @@ const initKeycloak = (onAuthenticatedCallback) => {
             console.log("First Name:", getName());
 
 
+
+
             // Debug log
             if (authenticated) {
                 console.log("User authenticated. Calling onAuthenticatedCallback...");
@@ -41,6 +43,7 @@ const doLogout = _kc.logout;
 
 const getToken = () => _kc.token;
 
+
 const getTokenParsed = () => _kc.tokenParsed;
 
 const isLoggedIn = () => !!_kc.token;
@@ -51,8 +54,10 @@ const updateToken = (successCallback) =>
         .catch(doLogin);
 
 const getUsername = () => _kc.tokenParsed?.preferred_username;
-// const getFirstName = () => _kc.tokenParsed?.first_name;
+
 const getName = () => _kc.tokenParsed?.name;
+
+const getUserId = () => _kc.tokenParsed?.sub;
 
 
 const hasRole = (roles) => roles.some((role) => _kc.hasRealmRole(role));
@@ -68,6 +73,7 @@ const UserService = {
     getUsername,
     getName,
     hasRole,
+    getUserId,
 };
 
 export default UserService;

@@ -1,0 +1,185 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.sect{
+
+    height: 100vh;
+}
+
+.container {
+    margin:auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 5px 4px 8px 8px black;
+}
+
+.container-info {
+    margin:auto;
+    width: 50%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 5px 4px 8px 8px black;
+}
+
+.create-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+.title-create{
+    padding: 20px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+
+
+.sep{
+    height: 60px;
+}
+
+/* Feedback Message */
+.feedback-message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Title */
+.title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* File Input */
+.file-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Text Inputs */
+.text-inputs {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+/* Label */
+.label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+.input, .textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Textarea */
+.textarea {
+    height: 150px;
+}
+
+/* Select Group */
+.select-group {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+/* Preview Images */
+.preview-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.preview-item {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.preview-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Submit Button */
+.submit-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:disabled {
+    background-color: #b0b0b0;
+    cursor: not-allowed;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+.info-create{
+    padding: 10px;
+    text-align: start;
+}
+
+.info-img{
+    height: 20px;
+    margin-top: 12px;
+}
+.InfoToFollow{
+    padding: 10px;
+}

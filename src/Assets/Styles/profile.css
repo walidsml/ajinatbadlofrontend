@@ -1,0 +1,166 @@
+.proffff{
+    margin: 0;
+    padding: 0;
+}
+
+
+.profile-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 80px;
+    height: 100vh;
+
+}
+
+.profile-profile{
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 80%;
+
+    box-shadow: 5px 5px 5px 5px black;
+
+    background-color: white;
+
+}
+
+.profile-items-profile{
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 10px;
+        height: 80%;
+        margin-left: 5px;
+        box-shadow: 5px 5px 5px 5px black;
+
+        background-color: white;
+
+}
+.profile-pic{
+    height: 150px;
+    border-radius: 50%;
+
+}
+
+.item-profile{
+    padding: 2px;
+    margin: 0;
+}
+
+.Item-List-profile{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 30px;
+}
+.profile-real-item-container{
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    transition: box-shadow 0.5s ease;
+}
+.profile-real-item-container:hover{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px black;
+    cursor: pointer;
+}
+
+.profile-item-image{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.profile-item-title, .profile-item-description, .profile-item-Category , .profile-item-Preferences{
+    padding: 10px;
+    text-align: start;
+}
+.abrbr{
+    font-weight: bold;
+}
+
+.profile-item-btn{
+
+}
+.edit-btn , .delete-btn{
+    height: 35px;
+    width: 90px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.edit-btn {
+    background-color: cornflowerblue;
+    transition: opacity 1s ease;
+}
+.delete-btn{
+    background-color: #fd4242;
+}
+
+.edit-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.delete-btn:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+
+
+.pf-btn{
+    display: grid;
+    gap: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.pf-btn > button{
+    height: 35px;
+    width: 120px;
+    border-radius: 5px;
+    transition: background-color 1s ease;
+
+}
+
+
+.pf-btn-edit{
+    background-color: white;
+    cursor: pointer;
+    border : 1px solid cornflowerblue;
+}
+.pf-btn-view{
+    background-color: white;
+    cursor: pointer;
+    border : 1px solid cornflowerblue;
+
+
+}
+.pf-btn-logout{
+    background-color: white;
+    cursor: pointer;
+    border : 1px solid red;
+
+
+
+}
+
+.pf-btn-edit:hover{
+    background-color: cornflowerblue;
+}
+.pf-btn-view:hover{
+    background-color: cornflowerblue;
+
+}
+.pf-btn-logout:hover{
+    background-color: red;
+}

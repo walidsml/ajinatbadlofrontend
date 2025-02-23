@@ -1,20 +1,21 @@
 .Item{
-    margin-right: 5px;
-    margin-left: 5px;
-
-    width: 220px;
-
+    width: 300px; /* Keep the fixed width */
+    margin: 5px; /* Adjust margin */
+    border: 1px solid black;
+    border-radius: 10px;
     box-shadow: 5px 5px 5px #000;
     transition: width 0.5s ease-in-out, height 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 .Item:hover{
     cursor: pointer;
-    width: 230px;
+    width: 310px;
     box-shadow: 10px 10px 10px #000;
 }
+
 .item-image{
     height: 250px;
     width: 100%;
+    border-radius: 10px;
 }
 .item-author-info{
     display: flex;
@@ -33,29 +34,32 @@
 .title, .date-posted{
     text-align: start;
     margin: 0;
-    padding: 0;
+    padding-left: 4px;
 }
+
+
+.title{
+    padding: 4px;
+}
+
 
 .date-posted{
     text-align: start;
-    height: 20px;
 }
 .date-posted{
     color: gray;
     margin-top: 4px;
 }
 
-.Item-List{
-    padding: 30px;
-    padding-top: 0px;
-
-}
 
 .Item-List{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; /* Allows items to move to the next row */
     justify-content: center;
-
+    gap: 10px; /* Space between items */
+    padding: 30px;
+    max-width: 1500px; /* 4 items * 350px + gaps */
+    margin: 0 auto; /* Center the container */
 }
 .mustButtons{
     padding: 4px;
@@ -138,4 +142,15 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.description-item{
+
+    text-align: start;
+    margin: 0;
+    padding: 0;
+    padding-left: 4px;
+    font-size: 13px;
+    font-weight: bold;
+
+
 }

@@ -1,13 +1,22 @@
 import React from 'react';
-import ReactDOM, {createRoot} from 'react-dom/client';
+import  {createRoot} from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import UserService from './services/UserService';
+import {BrowserRouter} from "react-router-dom";
 
 
 
-const renderApp = () => createRoot(document.getElementById("app")).render(<App />);
+// const renderApp = () => createRoot(document.getElementById("app")).render(<App />);
+
+const renderApp = () => {
+    createRoot(document.getElementById("app")).render(
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    );
+};
 
 UserService.initKeycloak(renderApp);
 

@@ -1,0 +1,54 @@
+.footer{
+background-color: #dad7d7;
+    border: 1px black solid;
+}
+
+.footer-wrapper{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    height: 250px;
+    align-items: center;
+    width: 70%;
+
+    background-color: white;
+    margin: 10px auto;
+    border-radius: 40px;
+    box-shadow: 2px 2px 4px black;
+    transition: box-shadow 1s;
+    cursor: pointer;
+}
+
+.footer-wrapper:hover{
+    border-radius: 44px;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.footer-id {
+    display: flex;  /* Use flexbox instead of grid */
+    align-items: center; /* Vertically center items */
+    gap: -10px; /* Adds space between the logo and text */
+}
+
+.footer-el-1{
+    text-align: start;
+}
+.footer-el-2{
+    text-align: start;
+}
+.footer-logo {
+    height: 90px;
+}
+
+.footer-el-1 > h5 {
+    padding: 2px;
+}
+.footer-el-2 > h5 {
+    padding: 2px;
+}
+.foot-element{
+    cursor: pointer;
+}
+.foot-element:hover{
+    text-decoration: underline;
+
+}

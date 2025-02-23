@@ -29,8 +29,11 @@
 }
 .hero-header{
     text-align: start;
-    padding: 10px;
-    padding-left: 30px;
+    padding: 30px;
 
 
+}
+
+body{
+    padding-top: 60px;
 }

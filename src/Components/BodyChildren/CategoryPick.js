@@ -2,12 +2,14 @@ import CarIcon from "../../Assets/Icons/car-icon.png";
 import BikeIcon from "../../Assets/Icons/motorcycle-icon.png";
 import HouseIcon from "../../Assets/Icons/house-icon.png";
 import PcIcon from "../../Assets/Icons/pc-icon.png";
+import UserService from "../../services/UserService";
+import "../../Assets/Styles/categories.css"
 
 export default function CategoryPick() {
     return (
         <div>
             <div className="hero-header">
-                <h2>Que cherchez-vous?</h2>
+                <h2>What are you looking for {UserService.getUsername()}?</h2>
             </div>
 
             <div className="Categories">

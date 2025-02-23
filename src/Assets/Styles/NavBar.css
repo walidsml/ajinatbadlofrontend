@@ -5,9 +5,16 @@
     margin: auto;
     justify-content: space-between;
     padding-right: 30px;
-    left: 30px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
     height: 70px;
+
+    position: fixed; /* Fix the navbar to the viewport */
+    top: 0; /* Stick it to the top */
+    left: 0;
+    width: 100%; /* Ensure it spans the full width */
+    background-color: white; /* Adjust as needed */
+    z-index: 1000; /* Ensure it stays above other content */
+
 }
 .text-logo{
     margin-left: -20px;
@@ -54,23 +61,58 @@
 
 .search-icon{
     height: 22px;
+    margin: 5px;
  }
 .input-fld{
-    width: 100%;
+    width: 60%;
     height: 30px;
+    border-radius: 10px;
+    border: .5px solid black;
+}
+
+.input-fld::placeholder {
+    padding-left: 10px;
+    color: gray;  /* Customize placeholder text color */
+    font-style: italic; /* Example: Make it italic */
+    opacity: 0.7; /* Adjust transparency */
 }
 .search-btn{
     background-color: white;
     border: none;
 }
 .nav-mid{
+
+    justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: row;
     height: 100%;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
 
 
+
+}
+
+.nav-sec-element {
+    margin-right: 8px;
+    margin-left: 8px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; /* Initially transparent border */
+    transition: border-bottom 1s ease; /* Transition for the border-bottom */
+}
+
+.nav-sec-element:hover {
+    cursor: pointer;
+    border-bottom: 2px solid black; /* Add the underline effect */
+}
+
+
+.logout-btn{
+    height: 40px;
+    width: 80px;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    color: white;
 }
